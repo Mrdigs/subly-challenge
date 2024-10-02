@@ -1,8 +1,6 @@
 import styles from "./card.module.css"
 
-interface DivAttributes extends React.HTMLAttributes<HTMLDivElement> {}
-
-interface CardContentProps extends Omit<DivAttributes, "className"> {}
+interface CardContentProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 interface CardProps {
   reverseColumnLayout?: boolean
@@ -10,10 +8,12 @@ interface CardProps {
 
 const CardTitle: React.FC<React.PropsWithChildren<CardContentProps>> = ({
   children,
+  className,
   ...divProps
 }) => {
+  const classes = [styles["card-title"], className || ""]
   return (
-    <div className={styles["card-title"]} {...divProps}>
+    <div className={classes.join(" ")} {...divProps}>
       {children}
     </div>
   )
@@ -21,10 +21,12 @@ const CardTitle: React.FC<React.PropsWithChildren<CardContentProps>> = ({
 
 const CardBody: React.FC<React.PropsWithChildren<CardContentProps>> = ({
   children,
+  className,
   ...divProps
 }) => {
+  const classes = [styles["card-body"], className || ""]
   return (
-    <div className={styles["card-body"]} {...divProps}>
+    <div className={classes.join(" ")} {...divProps}>
       {children}
     </div>
   )
