@@ -1,0 +1,28 @@
+.button {
+  --button-color: var(--brand-color);
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+}
+
+.button:focus {
+  outline-color: var(--brand-color);
+}
+
+.button-normal {
+  background-color: var(--button-color);
+  border-color: var(--button-color);
+  color: var(--background-color);
+}
+
+.button-secondary {
+  background-color: var(--background-color);
+  border-color: var(--button-color);
+  color: var(--button-color);
+}
+
+.button-outline {
+  background-color: transparent;
+  border-color: var(--button-color);
+  color: var(--button-color);
+}
