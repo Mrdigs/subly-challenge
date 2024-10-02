@@ -87,10 +87,3 @@ npm run build
 ```
 
 The production build will be in the `dist` folder.
-
-## Deployment
-
-This project is continuously deployed to **Vercel** using GitHub Actions. Any changes pushed to the `main` branch trigger the deployment process.
-
-View the live application:  
-[Subly Challenge Live Demo](https://subly-challenge-otkwayb0m-darren-scotts-projects.vercel.app/)
