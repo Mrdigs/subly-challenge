@@ -6,7 +6,7 @@
   --brand-color: #732ef5;
   --foreground-color: #242424;
   --background-color: #fff;
-  --light-color: #7a7a7a;
+  --light-color: #5f5f5f;
 
   color: var(--foreground-color);
   background-color: var(--background-color);
