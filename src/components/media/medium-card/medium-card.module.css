@@ -1,0 +1,19 @@
+.medium-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.medium-title strong {
+  font-weight: 600;
+}
+
+.medium-title small {
+  color: var(--light-color);
+  font-size: x-small;
+}
+
+.medium-body {
+  height: 200px;
+  position: relative;
+}

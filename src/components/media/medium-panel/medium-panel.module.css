@@ -1,0 +1,57 @@
+.medium-panel {
+  position: relative;
+  padding: 1rem;
+}
+
+.medium-panel-absolute {
+  position: absolute;
+  inset: 0;
+}
+
+.medium-panel-inset {
+  position: absolute;
+  inset: 0;
+}
+
+.medium-panel-ready .medium-panel-inset {
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.45);
+  visibility: hidden;
+}
+
+.medium-panel-ready:hover .medium-panel-inset {
+  visibility: visible;
+}
+
+.medium-panel-error {
+  background: pink;
+  display: grid;
+  place-items: center;
+}
+
+.medium-panel-error > div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.medium-panel-error p {
+  font-size: small;
+  margin-bottom: 1rem;
+}
+
+.medium-panel-error p + div {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.medium-panel-transcribing {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff99;
+  color: var(--light-color);
+}
