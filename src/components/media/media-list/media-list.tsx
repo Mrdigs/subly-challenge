@@ -1,15 +1,11 @@
 import styles from "./media-list.module.css"
 
-interface ListAttributes extends React.HTMLAttributes<HTMLUListElement> {}
-
-interface MediaListProps extends Omit<ListAttributes, "className"> {}
-
-const MediaList: React.FC<React.PropsWithChildren<MediaListProps>> = ({
-  children,
-  ...uListProps
-}) => {
+const MediaList: React.FC<
+  React.PropsWithChildren<React.HTMLAttributes<HTMLUListElement>>
+> = ({ children, className, ...uListProps }) => {
+  const classes = [styles["media-list"], className || ""]
   return (
-    <ul className={styles["media-list"]} {...uListProps}>
+    <ul className={classes.join(" ")} {...uListProps}>
       {children}
     </ul>
   )

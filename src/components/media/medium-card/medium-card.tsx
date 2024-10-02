@@ -24,12 +24,7 @@ const MediumCard: React.FC<MediumCardProps> = ({ medium }) => {
         </small>
       </Card.Title>
       <Card.Body className={styles["medium-body"]}>
-        <img
-          width="300"
-          height="200"
-          src={medium.cover}
-          alt={`Image of ${medium.name}`}
-        />
+        <img width="300" height="200" src={medium.cover} alt={medium.name} />
         <MediumPanel medium={medium} positionAbsolute={true} />
       </Card.Body>
     </Card>
