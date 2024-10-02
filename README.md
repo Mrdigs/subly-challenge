@@ -1,6 +1,6 @@
 # Subly Front-End Challenge
 
-This repository contains the implementation of the Subly front-end challenge, which involves building reusable components in a React and TypeScript environment. The project is deployed on Vercel, and you can view the live demo here: [Subly Challenge Live Demo](https://subly-challenge-otkwayb0m-darren-scotts-projects.vercel.app/).
+This repository contains the implementation of the Subly front-end challenge, which involves building reusable components in a React and TypeScript environment. The project is deployed on Vercel, and you can view the live demo here: [Subly Challenge Live Demo](https://subly-challenge.vercel.app/).
 
 ## Project Setup
 
@@ -29,7 +29,7 @@ The project includes **eslint-plugin-jsx-a11y** to catch accessibility best prac
 The project is continuously deployed to **Vercel**. A **GitHub Action** has been set up to automatically deploy the project to Vercel whenever a commit is made to the `main` branch. This ensures that changes are reflected in the live environment immediately, and it also serves as a pipeline to catch any build issues early.
 
 You can view the live project at the following URL:
-[Subly Challenge Live Demo](https://subly-challenge-otkwayb0m-darren-scotts-projects.vercel.app/).
+[Subly Challenge Live Demo](https://subly-challenge.vercel.app/).
 
 ### 7. Direct Commits to Main Branch
 
