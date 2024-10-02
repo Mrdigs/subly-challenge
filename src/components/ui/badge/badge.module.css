@@ -1,0 +1,20 @@
+.badge {
+  background-color: var(--brand-color);
+  border: 1px solid var(--light-color);
+  border-radius: 5px;
+  display: inline-flex;
+  font-size: small;
+  overflow: hidden;
+}
+
+.badge-icon {
+  padding: 0.25rem;
+  color: var(--background-color);
+}
+
+.badge-label {
+  padding: 0.4rem;
+  background-color: var(--background-color);
+  color: var(--light-color);
+  flex-grow: 1;
+}
