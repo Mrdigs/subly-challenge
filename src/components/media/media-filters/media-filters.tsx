@@ -21,6 +21,8 @@ const MediaFilters: React.FC<MediaFiltersProps> = ({
           <option value="">Please select...</option>
           <option value="en">English</option>
           <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="es">Spanish</option>
         </select>
         <label htmlFor="statusFilter">Status</label>
         <select id="statusFilter" name="status" defaultValue={filters.status}>
